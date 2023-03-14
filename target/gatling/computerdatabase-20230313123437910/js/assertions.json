@@ -1,0 +1,10 @@
+{
+  "simulation": "com.opencast.gatlingtest.ComputerDatabase",
+  "simulationId": "computerdatabase",
+  "start": 1678710877910,
+  "description": "TEst Run Computer DB",
+  "scenarios": ["ComputerDatabase"],
+  "assertions": [
+
+  ]
+}

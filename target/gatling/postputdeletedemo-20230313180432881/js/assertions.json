@@ -1,0 +1,10 @@
+{
+  "simulation": "com.opencast.gatlingtest.api.PostPutDeleteDemo",
+  "simulationId": "postputdeletedemo",
+  "start": 1678730672881,
+  "description": "PostRequest Demo",
+  "scenarios": ["create user"],
+  "assertions": [
+
+  ]
+}

@@ -1,0 +1,3 @@
+RUN	com.opencast.gatlingtest.FeederDemo	feederdemo	1678786474319	feeder	3.6.1
+USER	Feeders Demo	START	1678786474356
+USER	Feeders Demo	END	1678786477379

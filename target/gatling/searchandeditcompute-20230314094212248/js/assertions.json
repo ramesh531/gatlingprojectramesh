@@ -1,0 +1,10 @@
+{
+  "simulation": "com.opencast.gatlingtest.SearchAndEditCompute",
+  "simulationId": "searchandeditcompute",
+  "start": 1678786932248,
+  "description": "feeder",
+  "scenarios": ["Users", "Administrators"],
+  "assertions": [
+
+  ]
+}

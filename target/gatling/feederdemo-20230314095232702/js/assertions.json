@@ -1,0 +1,10 @@
+{
+  "simulation": "com.opencast.gatlingtest.FeederDemo",
+  "simulationId": "feederdemo",
+  "start": 1678787552702,
+  "description": "feeder",
+  "scenarios": ["Feeders Demo"],
+  "assertions": [
+
+  ]
+}

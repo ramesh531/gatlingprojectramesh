@@ -1,0 +1,10 @@
+{
+  "simulation": "com.opencast.gatlingtest.SearchAndEditCompute",
+  "simulationId": "searchandeditcompute",
+  "start": 1678720714855,
+  "description": "SearchAnd Edit With Rampup and User roles",
+  "scenarios": ["Administrators", "Users"],
+  "assertions": [
+
+  ]
+}

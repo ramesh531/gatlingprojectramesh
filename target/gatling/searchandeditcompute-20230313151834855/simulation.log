@@ -1,0 +1,79 @@
+RUN	com.opencast.gatlingtest.SearchAndEditCompute	searchandeditcompute	1678720714855	SearchAnd Edit With Rampup and User roles	3.6.1
+ERROR	GetComputers: Failed to build request: No baseUrl defined but provided url is relative : /computers 	1678720715210
+USER	Users	START	1678720715208
+USER	Administrators	START	1678720715208
+REQUEST		GetComputers	1678720715217	1678720715607	OK	 
+ERROR	GetComputers: Failed to build request: No baseUrl defined but provided url is relative : /computers 	1678720716206
+USER	Users	START	1678720716205
+ERROR	GetComputers: Failed to build request: No baseUrl defined but provided url is relative : /computers 	1678720717205
+USER	Users	START	1678720717205
+USER	Administrators	START	1678720717202
+ERROR	Search: Failed to build request: No baseUrl defined but provided url is relative : /computers?f=ACE 	1678720717213
+REQUEST		GetComputers	1678720717204	1678720717620	OK	 
+REQUEST		Search	1678720717644	1678720717742	OK	 
+ERROR	GetComputers: Failed to build request: No baseUrl defined but provided url is relative : /computers 	1678720718203
+USER	Users	START	1678720718203
+ERROR	Search: Failed to build request: No baseUrl defined but provided url is relative : /computers?f=ACE 	1678720718207
+ERROR	GetComputers: Failed to build request: No baseUrl defined but provided url is relative : /computers 	1678720719202
+USER	Users	START	1678720719202
+ERROR	Search: Failed to build request: No baseUrl defined but provided url is relative : /computers?f=ACE 	1678720719207
+ERROR	Edit: Failed to build request: No baseUrl defined but provided url is relative : /computers/381 	1678720719215
+REQUEST		Search	1678720719629	1678720719729	OK	 
+REQUEST		Edit	1678720719747	1678720719846	OK	 
+ERROR	GetComputers: Failed to build request: No baseUrl defined but provided url is relative : /computers 	1678720720205
+USER	Users	START	1678720720205
+ERROR	Search: Failed to build request: No baseUrl defined but provided url is relative : /computers?f=ACE 	1678720720206
+USER	Administrators	START	1678720720203
+ERROR	Edit: Failed to build request: No baseUrl defined but provided url is relative : /computers/381 	1678720720209
+REQUEST		GetComputers	1678720720205	1678720720623	OK	 
+ERROR	GetComputers: Failed to build request: No baseUrl defined but provided url is relative : /computers 	1678720721203
+USER	Users	START	1678720721202
+ERROR	Search: Failed to build request: No baseUrl defined but provided url is relative : /computers?f=ACE 	1678720721205
+ERROR	Edit: Failed to build request: No baseUrl defined but provided url is relative : /computers/381 	1678720721208
+REQUEST		Edit	1678720721737	1678720721841	OK	 
+ERROR	GetComputers: Failed to build request: No baseUrl defined but provided url is relative : /computers 	1678720722202
+USER	Users	START	1678720722202
+USER	Administrators	START	1678720722203
+ERROR	Search: Failed to build request: No baseUrl defined but provided url is relative : /computers?f=ACE 	1678720722207
+ERROR	Edit: Failed to build request: No baseUrl defined but provided url is relative : /computers/381 	1678720722207
+REQUEST		GetComputers	1678720722204	1678720722596	OK	 
+REQUEST		Search	1678720722627	1678720722733	OK	 
+ERROR	GetComputers: Failed to build request: No baseUrl defined but provided url is relative : /computers 	1678720723202
+USER	Users	START	1678720723202
+ERROR	Search: Failed to build request: No baseUrl defined but provided url is relative : /computers?f=ACE 	1678720723205
+ERROR	Edit: Failed to build request: No baseUrl defined but provided url is relative : /computers/381 	1678720723206
+USER	Users	END	1678720723218
+REQUEST		Save	1678720723858	1678720723954	OK	 
+REQUEST		Save Redirect 1	1678720723967	1678720724063	OK	 
+ERROR	GetComputers: Failed to build request: No baseUrl defined but provided url is relative : /computers 	1678720724201
+USER	Users	START	1678720724201
+ERROR	Search: Failed to build request: No baseUrl defined but provided url is relative : /computers?f=ACE 	1678720724204
+ERROR	Edit: Failed to build request: No baseUrl defined but provided url is relative : /computers/381 	1678720724208
+USER	Users	END	1678720724210
+REQUEST		Search	1678720724604	1678720724705	OK	 
+REQUEST		Edit	1678720724738	1678720724837	OK	 
+ERROR	Search: Failed to build request: No baseUrl defined but provided url is relative : /computers?f=ACE 	1678720725204
+ERROR	Edit: Failed to build request: No baseUrl defined but provided url is relative : /computers/381 	1678720725207
+USER	Users	END	1678720725210
+REQUEST		Save	1678720725848	1678720725950	OK	 
+REQUEST		Save Redirect 1	1678720725952	1678720726051	OK	 
+ERROR	Search: Failed to build request: No baseUrl defined but provided url is relative : /computers?f=ACE 	1678720726204
+ERROR	Edit: Failed to build request: No baseUrl defined but provided url is relative : /computers/381 	1678720726206
+USER	Users	END	1678720726209
+REQUEST		Edit	1678720726709	1678720726807	OK	 
+USER	Administrators	END	1678720727066
+ERROR	Edit: Failed to build request: No baseUrl defined but provided url is relative : /computers/381 	1678720727205
+USER	Users	END	1678720727208
+ERROR	Edit: Failed to build request: No baseUrl defined but provided url is relative : /computers/381 	1678720728207
+USER	Users	END	1678720728211
+REQUEST		Save	1678720728842	1678720728949	OK	 
+REQUEST		Save Redirect 1	1678720728951	1678720729054	OK	 
+USER	Administrators	END	1678720729056
+USER	Users	END	1678720729209
+USER	Users	END	1678720730208
+REQUEST		Save	1678720730812	1678720730911	OK	 
+REQUEST		Save Redirect 1	1678720730913	1678720731010	OK	 
+USER	Users	END	1678720731208
+USER	Administrators	END	1678720732058
+USER	Users	END	1678720732211
+USER	Administrators	END	1678720734016

@@ -27,7 +27,7 @@ class FeederDemo extends Simulation {
       )
 }
 
-  //setup
+  //setuphttps://github.com/ramesh531/gatlingprojectramesh.git
 
   setUp(scn.inject(atOnceUsers(3))).protocols(httpProtocol)
 

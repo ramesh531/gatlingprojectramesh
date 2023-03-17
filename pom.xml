@@ -12,7 +12,8 @@
     <encoding>UTF-8</encoding>
 
     <gatling.version>3.6.1</gatling.version>
-    <gatling-maven-plugin.version>3.1.2</gatling-maven-plugin.version>
+    <gatling-maven-plugin.version>4.3.0</gatling-maven-plugin.version>
+    <scala-maven-plugin.version>4.8.1</scala-maven-plugin.version>
   </properties>
 
   <dependencies>
@@ -31,6 +32,20 @@
       <artifactId>gatling-recorder</artifactId>
       <version>${gatling.version}</version>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/io.gatling/gatling-maven-plugin -->
+    <dependency>
+      <groupId>io.gatling</groupId>
+      <artifactId>gatling-maven-plugin</artifactId>
+      <version>${gatling-maven-plugin.version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/net.alchim31.maven/scala-maven-plugin -->
+    <!--dependency>
+      <groupId>net.alchim31.maven</groupId>
+      <artifactId>scala-maven-plugin</artifactId>
+      <version>${scala-maven-plugin.version}</version>
+    </dependency-->
+
   </dependencies>
 
   <build>
@@ -40,7 +55,42 @@
         <groupId>io.gatling</groupId>
         <artifactId>gatling-maven-plugin</artifactId>
         <version>${gatling-maven-plugin.version}</version>
+
+       <configuration>
+          <runMultipleSimulations>true</runMultipleSimulations>
+          <!--includes>
+            <include>com.opencast.gatlingtest.*</include>
+          </includes>
+          <excludes>
+            <exclude>my.package.IgnoredSimulation</exclude>
+          </excludes-->
+        </configuration>
       </plugin>
+      <plugin>
+        <groupId>net.alchim31.maven</groupId>
+        <artifactId>scala-maven-plugin</artifactId>
+        <version>${scala-maven-plugin.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>testCompile</goal>
+            </goals>
+            <configuration>
+              <jvmArgs>
+                <jvmArg>-Xss100M</jvmArg>
+              </jvmArgs>
+              <args>
+                <arg>-deprecation</arg>
+                <arg>-feature</arg>
+                <arg>-unchecked</arg>
+                <arg>-language:implicitConversions</arg>
+                <arg>-language:postfixOps</arg>
+              </args>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
     </plugins>
   </build>
 </project>
